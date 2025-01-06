@@ -9,6 +9,7 @@ gcc -O2 -static -pthread \
 	examples/fuel.c \
 	-I crates/c-api/include \
 	-I crates/c-api/wasm-c-api/include \
+	-I ./target/debug/build/wasmtime-c-api-impl-983b208bc8186da0/out/include \
 	target/release/libwasmtime.a \
 	-ldl -lm \
 	-o fuel

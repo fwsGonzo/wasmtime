@@ -1,0 +1,276 @@
+$ bash build.sh 
+Setting up EMSDK environment (suppress these messages with EMSDK_QUIET=1)
+Adding directories to PATH:
+PATH += /home/gonzo/github/emsdk
+PATH += /home/gonzo/github/emsdk/upstream/emscripten
+
+Setting environment variables:
+PATH = /home/gonzo/github/emsdk:/home/gonzo/github/emsdk/upstream/emscripten:/home/gonzo/.nvm/versions/node/v23.5.0/bin:/home/gonzo/nim-2.0.4/bin:/home/gonzo/.nimble/bin:/home/gonzo/.cargo/bin:/home/gonzo/.local/bin:/home/gonzo/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/gonzo/.dotnet/tools:/home/gonzo/go/bin:/home/gonzo/riscv/bin:/home/gonzo/zig:/usr/local/cuda-12.4/bin
+EMSDK = /home/gonzo/github/emsdk
+EMSDK_NODE = /home/gonzo/github/emsdk/node/20.18.0_64bit/bin/node
+block.c:39:39: warning: omitting the parameter name in a function definition is a C23 extension [-Wc23-extensions]
+   39 | uint32_t stdRainbowBlockColor(uint32_t, int x, int z)
+      |                                       ^
+block.c:57:40: warning: omitting the parameter name in a function definition is a C23 extension [-Wc23-extensions]
+   57 | uint32_t stdRainbowBlockColor2(uint32_t, int x, int z)
+      |                                        ^
+block.c:68:40: warning: omitting the parameter name in a function definition is a C23 extension [-Wc23-extensions]
+   68 | extern uint32_t benchAllocFree(uint32_t, int xx, int zz)
+      |                                        ^
+3 warnings generated.
+/usr/local/bin/ld: target/release/libwasmtime.a(dirs_sys_next-9e4e1d193ee8d609.dirs_sys_next.d8f5ba8eab4ff17a-cgu.1.rcgu.o): in function `dirs_sys_next::target_unix_not_redox::home_dir':
+dirs_sys_next.d8f5ba8eab4ff17a-cgu.1:(.text._ZN13dirs_sys_next21target_unix_not_redox8home_dir17h39c33603282079dfE+0xe0): warning: Using 'getpwuid_r' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+/usr/local/bin/ld: target/release/libwasmtime.a(std-8f88c761e33f2651.std.7c7acd4e376d60d3-cgu.0.rcgu.o): in function `<std::sys_common::net::LookupHost as core::convert::TryFrom<(&str,u16)>>::try_from::{{closure}}':
+/rustc/5680fa18feaa87f3ff04063800aec256c3d4b4be/library/std/src/sys_common/net.rs:206:(.text._ZN104_$LT$std..sys_common..net..LookupHost$u20$as$u20$core..convert..TryFrom$LT$$LP$$RF$str$C$u16$RP$$GT$$GT$8try_from28_$u7b$$u7b$closure$u7d$$u7d$17h509d796f74cad1a6E+0x5d): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+/usr/local/bin/ld: target/release/libwasmtime.a(ittnotify_static.o): in function `__itt_init_ittlib':
+ittnotify_static.c:(.text.__itt_init_ittlib+0x76b): warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+Compiling module...
+Running benchmark with 2000 iterations
+N = 0
+Nanodiff: 43
+Nanodiff: 43
+Nanodiff: 43
+Nanodiff: 127
+Nanodiff: 46
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 45
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 43
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 46
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 45
+Nanodiff: 44
+Nanodiff: 44
+Nanodiff: 44
+N = 1
+Nanodiff: 50
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 51
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 51
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 51
+Nanodiff: 51
+Nanodiff: 49
+Nanodiff: 50
+Nanodiff: 49
+Nanodiff: 49
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 50
+Nanodiff: 49
+Nanodiff: 50
+N = 2
+Nanodiff: 52
+Nanodiff: 52
+Nanodiff: 52
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 52
+Nanodiff: 52
+Nanodiff: 53
+Nanodiff: 52
+Nanodiff: 52
+Nanodiff: 66
+Nanodiff: 54
+Nanodiff: 55
+Nanodiff: 54
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 54
+Nanodiff: 55
+Nanodiff: 52
+Nanodiff: 52
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+Nanodiff: 53
+N = 3
+Nanodiff: 56
+Nanodiff: 55
+Nanodiff: 56
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 56
+Nanodiff: 65
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 56
+Nanodiff: 77
+Nanodiff: 55
+Nanodiff: 57
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 57
+Nanodiff: 155
+Nanodiff: 57
+Nanodiff: 55
+Nanodiff: 56
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 57
+Nanodiff: 55
+Nanodiff: 55
+Nanodiff: 56
+N = 4
+Nanodiff: 60
+Nanodiff: 59
+Nanodiff: 60
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 59
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 59
+Nanodiff: 58
+Nanodiff: 59
+Nanodiff: 59
+Nanodiff: 59
+Nanodiff: 59
+Nanodiff: 59
+Nanodiff: 59
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 59
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 58
+Nanodiff: 59
+Nanodiff: 59
+N = 5
+Nanodiff: 62
+Nanodiff: 62
+Nanodiff: 62
+Nanodiff: 62
+Nanodiff: 62
+Nanodiff: 63
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 62
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 63
+Nanodiff: 62
+Nanodiff: 61
+Nanodiff: 62
+Nanodiff: 61
+Nanodiff: 62
+Nanodiff: 62
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 61
+Nanodiff: 62
+Nanodiff: 61
+Nanodiff: 62
+Nanodiff: 62
+Nanodiff: 61
+Nanodiff: 61
+N = 6
+Nanodiff: 66
+Nanodiff: 65
+Nanodiff: 67
+Nanodiff: 66
+Nanodiff: 65
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 65
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 65
+Nanodiff: 65
+Nanodiff: 66
+Nanodiff: 65
+Nanodiff: 65
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 66
+Nanodiff: 67
+Nanodiff: 65
+Nanodiff: 114
+Nanodiff: 83
+Nanodiff: 66
+Nanodiff: 66
+N = 7
+Nanodiff: 69
+Nanodiff: 69
+Nanodiff: 165
+Nanodiff: 69
+Nanodiff: 70
+Nanodiff: 69
+Nanodiff: 68
+Nanodiff: 88
+Nanodiff: 69
+Nanodiff: 70
+Nanodiff: 69
+Nanodiff: 68
+Nanodiff: 68
+Nanodiff: 69
+Nanodiff: 68
+Nanodiff: 86
+Nanodiff: 67
+Nanodiff: 67
+Nanodiff: 68
+Nanodiff: 67
+Nanodiff: 68
+Nanodiff: 68
+Nanodiff: 67
+Nanodiff: 68
+Nanodiff: 67
+Nanodiff: 67
+Nanodiff: 69
+Nanodiff: 68
+Nanodiff: 68
+Nanodiff: 68

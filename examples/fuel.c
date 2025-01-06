@@ -314,8 +314,8 @@ int main() {
 			args[i].kind = WASMTIME_I32;
 			args[i].of.i32 = i;
 		}
-		//call_function_args(context, &call_tester[N], args, N);
-		call_function_args(context, &syscall_tester[N], args, N);
+		call_function_args(context, &call_tester[N], args, N);
+		//call_function_args(context, &syscall_tester[N], args, N);
 		asm ("" ::: "memory");
 		struct timespec t1 = time_now();
 		total += nanodiff(t0, t1);
